@@ -7,10 +7,10 @@ warnings.filterwarnings("ignore")
 ### --- Importing data ---
 
 info_xlsx = pd.ExcelFile('Dataset_email.xlsx')
-info = pd.read_excel(info_xlsx, sheetname = 'ParticipantInfo')
+info = pd.read_excel(info_xlsx, sheet_name = 'ParticipantInfo')
 
 dm_xlsx = pd.ExcelFile('Dataset_email.xlsx')
-dm = pd.read_excel(dm_xlsx, sheetname = 'Daily E-mail')
+dm = pd.read_excel(dm_xlsx, sheet_name = 'Daily E-mail')
 
 
 ### --- Merging data to create data mart ---
